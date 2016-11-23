@@ -1,12 +1,14 @@
 \documentclass{tufte-handout}
 \title{Formalising techniques for improvising and storytelling for children's bedtime stories}
+\author[Tom Wallis]{Tom Wallis}
 \begin{document}
 \maketitle
+
 \begin{abstract}
-    Since time immemorial, stories have been an essential and unavoidable component of human culture. Lately, this part of human culture has been fundementally changed by the introduction of a new technology: written stories which can be retold and reused.
-    While there is an obvious benefit to this, we now often lack an old skill: improvised storytelling. As a result of the importance of storytelling to human culture, however, this lacking skill is a great shame, and there is no obvious path to gaining it back. 
-    Project Albert attempt to fix this rift in culture, by making storytelling easier through the following of simple rules regarding the story. Built on knowledge from architecture and software engineering, Albert simplifies the construction and delivery of an improvised story which is easy to follow for the audience and easy to construct for the storyteller. To do this, we narrow our scope and focus on improvising children's bedtime stories, as these are brief, simple, and often formulaic, making them an ideal candidate for a formalised technique.
+    Storytelling is a valuable, yet sadly difficult-to-master art. It can allow groups to bond, and can be particularly valuable for parents, who often do not have the money to buy children's books to read.
+    However, its difficulty-to-master means storytelling is a rarely used technique. Project Albert provides a fix for this by demonstrating a framework, built on design patterns, which can assist a storyteller in constructing a coherant, consistant story without becoming overly complex.
 \end{abstract}
+
 \section{Introduction}
 \newthought{Stories are important.} For example, they're a terrific way to bond --- particularly for children. Many of us can relate to the experience of being much smaller and telling stories by firelight, or of being read to, or of playing make-believe as and inventing our own tales as we went along. \par
 
@@ -21,7 +23,20 @@ To bridge this divide between skill required and skill present, some system for 
 
 \begin{enumerate}
     \item Show how plot can be constructed in a way which is easy to improvise, while being coherant for the audience.
-    \item Show 
+    \item Show how characters should be constructed, in a way which works within this plot. These characters would have to be:
+        \begin{enumerate}
+            \item Believable for the audience
+            \item Relatable for the audience
+            \item Consistent within the narrative
+            \item Easy to construct for the storyteller
+        \end{enumerate}
+    \item Show how the plot and characters can exist within a world which is defined on-the-fly. This world would have to be:
+        \begin{enumerate}
+            \item Easy to construct for the storyteller
+            \item Simple enough to reuse for later stories
+            \item Believable for the audience
+            \item A sufficient degree of detail to permit the story to be told properly, without becoming too complex to keep easily consistent.
+        \end{enumerate}
 \end{enumerate}
 
 \newthought{To this end}, \emph{Project Albert} attempts to bring the value and power of improvisation to the layperson. It achieves this by provifing a framework, using design patterns, which act as a flexible scaffolding for the storyteller to weave their story around. This scaffolding, in theory, provides a fix for the problems outlined here, and acts as a proof of concept of improvisation-by-design-pattern which can be investigated further and developed upon. This essay provides exposition of the key concepts surrounding Project Albert, explores its usage, and suggests future work which can be done to further the progress in this experimental storytelling technique.
